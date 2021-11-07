@@ -1,5 +1,6 @@
 package com.example.cv2;
 
+import Hangman.Hangman;
 import javafx.event.ActionEvent;
 
 public class Controller {
@@ -21,6 +22,7 @@ public class Controller {
 
     public void hangManClicked(){
         System.out.println("Spela hänga gubbe");
+
     }
 
     public void closeClicked(){
