@@ -1,7 +1,5 @@
 package com.example.cv2;
 
-import Hangman.Hangman;
-import javafx.event.ActionEvent;
 
 public class Controller {
 

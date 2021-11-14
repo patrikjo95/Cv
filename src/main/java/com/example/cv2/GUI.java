@@ -14,6 +14,7 @@ public class GUI extends Application {
         Scene scene = new Scene(fxmlLoader.load());
 
         stage.setScene(scene);
+        stage.setTitle("CV, Patrik J");
         stage.show();
     }
 
