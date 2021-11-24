@@ -18,27 +18,23 @@
    <children>
       <BorderPane>
          <top>
-            <VBox BorderPane.alignment="TOP_LEFT">
+            <VBox maxWidth="1.7976931348623157E308">
                <children>
                   <MenuBar VBox.vgrow="ALWAYS">
                     <menus>
                       <Menu mnemonicParsing="false" text="File">
                         <items>
                           <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
-                              <MenuItem fx:id="closeMenuItem1" mnemonicParsing="false" onAction="#closeClicked" text="Hangman" />
+                              <MenuItem fx:id="hangManItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
                         </items>
                       </Menu>
                     </menus>
                   </MenuBar>
-                  <VBox alignment="TOP_CENTER">
-                     <children>
-                        <Label prefHeight="79.0" text="Patrik Johansson, Systemutvecklingsstudent Java">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </VBox>
+                  <Label text="Patrik Johansson, Systemutvecklingsstudent Java">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
                </children>
             </VBox>
          </top>
