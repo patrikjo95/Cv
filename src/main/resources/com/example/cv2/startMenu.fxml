@@ -18,23 +18,31 @@
    <children>
       <BorderPane>
          <top>
-            <VBox maxWidth="1.7976931348623157E308">
+            <VBox BorderPane.alignment="TOP_LEFT">
                <children>
-                  <MenuBar VBox.vgrow="ALWAYS">
-                    <menus>
-                      <Menu mnemonicParsing="false" text="File">
-                        <items>
-                          <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
-                              <MenuItem fx:id="hangManItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
-                        </items>
-                      </Menu>
-                    </menus>
-                  </MenuBar>
-                  <Label text="Patrik Johansson, Systemutvecklingsstudent Java">
-                     <font>
-                        <Font name="System Bold" size="18.0" />
-                     </font>
-                  </Label>
+                  <HBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <MenuBar HBox.hgrow="ALWAYS">
+                          <menus>
+                            <Menu mnemonicParsing="false" text="File">
+                              <items>
+                                <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
+                                    <MenuItem fx:id="hangManItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
+                              </items>
+                            </Menu>
+                          </menus>
+                        </MenuBar>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label prefHeight="79.0" text="Patrik Johansson, Systemutvecklingsstudent Java">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
                </children>
             </VBox>
          </top>
