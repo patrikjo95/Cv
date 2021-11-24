@@ -15,7 +15,10 @@ public class Game {
     public void startGame(){
         setupGameWord();
 
+        //ta bort om man vill visa ordet:
         //System.out.println(word);
+
+
 
         List<Character> playerGuesses = new ArrayList<>();
 
