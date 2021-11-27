@@ -1,6 +1,8 @@
 package com.example.cv2;
 
 
+import Hangman.Game;
+
 public class Controller {
 
     public void aboutButtonClicked(){
@@ -19,7 +21,8 @@ public class Controller {
     }
 
     public void hangManClicked(){
-        System.out.println("Spela hänga gubbe");
+        Game game = new Game();
+        game.startGame();
 
     }
 

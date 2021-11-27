@@ -20,16 +20,20 @@
          <top>
             <VBox BorderPane.alignment="TOP_LEFT">
                <children>
-                  <MenuBar VBox.vgrow="ALWAYS">
-                    <menus>
-                      <Menu mnemonicParsing="false" text="File">
-                        <items>
-                          <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
-                              <MenuItem fx:id="hangmanMenuItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
-                        </items>
-                      </Menu>
-                    </menus>
-                  </MenuBar>
+                  <HBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <MenuBar HBox.hgrow="ALWAYS">
+                          <menus>
+                            <Menu mnemonicParsing="false" text="File">
+                              <items>
+                                <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
+                                    <MenuItem fx:id="hangManItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
+                              </items>
+                            </Menu>
+                          </menus>
+                        </MenuBar>
+                     </children>
+                  </HBox>
                   <VBox alignment="TOP_CENTER">
                      <children>
                         <Label prefHeight="79.0" text="Patrik Johansson, Systemutvecklingsstudent Java">
