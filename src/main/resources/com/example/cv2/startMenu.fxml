@@ -25,7 +25,7 @@
                       <Menu mnemonicParsing="false" text="File">
                         <items>
                           <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
-                              <MenuItem fx:id="closeMenuItem1" mnemonicParsing="false" onAction="#closeClicked" text="Hangman" />
+                              <MenuItem fx:id="hangmanMenuItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
                         </items>
                       </Menu>
                     </menus>
