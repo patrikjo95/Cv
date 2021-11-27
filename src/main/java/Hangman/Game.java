@@ -46,7 +46,7 @@ public class Game {
                 System.out.println("You win!!");
                 break;
             }
-            System.out.println("Please enter your guess for the word");
+            System.out.println("Please enter your guess for the word, wrong guesses wont affect your lives :)");
             if (keyboard.nextLine().equals(word)) {
                 System.out.println(word + " Was the right word!");
                 System.out.println("You win!!");
@@ -66,7 +66,7 @@ public class Game {
         String players = keyboard.nextLine();
         if (players.equals("1")) {
             try{
-                scanner = new Scanner(new File("C:\\Users\\patri\\IdeaProjects\\Cv\\src\\main\\java\\Hangman\\wordlist.txt"));
+                scanner = new Scanner(new File("src/main/java/Hangman/wordlist.txt"));
             }catch(Exception e) {
                 e.printStackTrace();
             }

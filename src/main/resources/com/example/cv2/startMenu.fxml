@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -10,93 +9,63 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cv2.Controller">
-   <children>
-      <BorderPane>
-         <top>
-            <VBox BorderPane.alignment="TOP_LEFT">
-               <children>
-                  <HBox VBox.vgrow="ALWAYS">
-                     <children>
-                        <MenuBar HBox.hgrow="ALWAYS">
-                          <menus>
-                            <Menu mnemonicParsing="false" text="File">
-                              <items>
-                                <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
-                                    <MenuItem fx:id="hangManItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
-                              </items>
-                            </Menu>
-                          </menus>
-                        </MenuBar>
-                     </children>
-                  </HBox>
-                  <VBox alignment="TOP_CENTER">
-                     <children>
-                        <Label prefHeight="79.0" text="Patrik Johansson, Systemutvecklingsstudent Java">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </VBox>
-               </children>
-            </VBox>
-         </top>
-         <center>
-            <VBox alignment="TOP_CENTER" spacing="5.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#aboutButtonClicked" prefWidth="190.0" text="Om Patrik">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </Button>
-                  <Button fx:id="arbetslivButton" mnemonicParsing="false" onAction="#arbetslivButtonClicked" prefWidth="190.0" text="Arbetslivserfarenhet">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="utbildningarButton" mnemonicParsing="false" onAction="#utbildningarButtonClicked" prefWidth="190.0" text="Utbildningar">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-               </children>
-            </VBox>
-         </center>
-         <bottom>
-            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <ImageView fitHeight="189.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../../java/Bilder/patrik.jpg" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../../java/Bilder/newton.jpg" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </HBox>
-               </children>
-               <padding>
-                  <Insets top="10.0" />
-               </padding>
-            </HBox>
-         </bottom>
-      </BorderPane>
-   </children>
-</Pane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cv2.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeClicked" text="Close" />
+                  <MenuItem fx:id="hangmanMenuItem" mnemonicParsing="false" onAction="#hangManClicked" text="Hangman" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#aboutButtonClicked" prefWidth="130.0" text="About Patrik">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="careerButton" mnemonicParsing="false" onAction="#careerButtonClicked" prefWidth="130.0" text="Career">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="educationButton" mnemonicParsing="false" onAction="#educationButtonClicked" prefWidth="130.0" text="Educations">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/Bilder/patrik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="142.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/Bilder/newton.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

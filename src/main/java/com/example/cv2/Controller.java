@@ -10,12 +10,12 @@ public class Controller {
 
     }
 
-    public void arbetslivButtonClicked(){
+    public void careerButtonClicked(){
         System.out.println("Arbetslivserfarenhet");
 
     }
 
-    public void utbildningarButtonClicked(){
+    public void educationButtonClicked(){
         System.out.println("Utbildningar");
 
     }
