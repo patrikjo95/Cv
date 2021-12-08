@@ -2,11 +2,22 @@ package com.example.cv2;
 
 
 import Hangman.Game;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Controller {
 
-    public void aboutButtonClicked(){
-        System.out.println("Om patrik");
+    public void aboutButtonClicked() throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("aboutPatrik.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+
+        stage.setScene(scene);
+        stage.setTitle("CV, Patrik J");
+        stage.show();
 
     }
 

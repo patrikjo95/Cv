@@ -55,12 +55,12 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="150.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="110.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../java/Bilder/patrik.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="142.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="108.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../java/Bilder/newton.jpg" />
                </image>
