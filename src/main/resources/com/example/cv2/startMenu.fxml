@@ -57,12 +57,12 @@
                         <Insets />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="arbetslivButton" mnemonicParsing="false" onAction="#arbetslivButtonClicked" prefWidth="190.0" text="Arbetslivserfarenhet">
+                  <Button fx:id="arbetslivButton" mnemonicParsing="false" onAction="#careerButtonClicked" prefWidth="190.0" text="Arbetslivserfarenhet">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="utbildningarButton" mnemonicParsing="false" onAction="#utbildningarButtonClicked" prefWidth="190.0" text="Utbildningar">
+                  <Button fx:id="utbildningarButton" mnemonicParsing="false" onAction="#educationButtonClicked" prefWidth="190.0" text="Utbildningar">
                      <font>
                         <Font size="18.0" />
                      </font>
