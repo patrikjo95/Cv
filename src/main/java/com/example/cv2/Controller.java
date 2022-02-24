@@ -10,24 +10,37 @@ import java.io.IOException;
 
 public class Controller {
 
-    public void aboutButtonClicked() throws IOException {
+
+    public void aboutButtonClicked() throws IOException{
         Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("aboutPatrik.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("about.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         stage.setScene(scene);
-        stage.setTitle("CV, Patrik J");
+        stage.setTitle("About Patrik J");
         stage.show();
 
     }
 
-    public void careerButtonClicked(){
-        System.out.println("Arbetslivserfarenhet");
+    public void careerButtonClicked() throws IOException{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("career.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+
+        stage.setScene(scene);
+        stage.setTitle("Career Patrik J");
+        stage.show();
 
     }
 
-    public void educationButtonClicked(){
-        System.out.println("Utbildningar");
+    public void educationButtonClicked() throws IOException{
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("education.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+
+        stage.setScene(scene);
+        stage.setTitle("Educations Patrik J");
+        stage.show();
 
     }
 

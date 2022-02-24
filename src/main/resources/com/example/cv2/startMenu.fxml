@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cv2.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cv2.Controller">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -26,7 +26,7 @@
       </MenuBar>
    </top>
    <center>
-      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+      <VBox alignment="TOP_CENTER" prefHeight="195.0" prefWidth="601.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
          <children>
             <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#aboutButtonClicked" prefWidth="130.0" text="About Patrik">
                <font>
@@ -55,14 +55,14 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="110.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="195.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/Bilder/patrik.jpg" />
+                  <Image url="file:/C:/Users/Puder/IdeaProjects/Cv/src/main/java/Bilder/patrik.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="108.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="180.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/Bilder/newton.jpg" />
+                  <Image url="file:/C:/Users/Puder/IdeaProjects/Cv/src/main/java/Bilder/newton.jpg" />
                </image>
             </ImageView>
          </children>
