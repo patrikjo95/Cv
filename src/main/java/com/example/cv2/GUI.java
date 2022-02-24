@@ -16,6 +16,7 @@ public class GUI extends Application {
         stage.setScene(scene);
         stage.setTitle("CV, Patrik J");
         stage.show();
+        stage.setResizable(false);
     }
 
     public static void main(String[] args) {
