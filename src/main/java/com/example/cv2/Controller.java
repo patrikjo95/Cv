@@ -19,6 +19,7 @@ public class Controller {
         stage.setScene(scene);
         stage.setTitle("About Patrik J");
         stage.show();
+        stage.setResizable(false);
 
     }
 
@@ -30,6 +31,7 @@ public class Controller {
         stage.setScene(scene);
         stage.setTitle("Career Patrik J");
         stage.show();
+        stage.setResizable(false);
 
     }
 
@@ -41,6 +43,7 @@ public class Controller {
         stage.setScene(scene);
         stage.setTitle("Educations Patrik J");
         stage.show();
+        stage.setResizable(false);
 
     }
 
